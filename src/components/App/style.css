@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #e9f8ff, #90b2d8, #c1e3ff);
+  font-family: "Marck Script", cursive;
+}
+
+.shopping__list {
+  width: 650px;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 30px;
+}
+
+input {
+  width: 350px;
+  height: 33px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Marck Script", cursive;
+  font-size: 19px;
+}
+
+input::placeholder {
+  font-family: "Marck Script", cursive;
+  font-size: 19px;
+}
+
+.item__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccdffd;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.add__button,
+.save__button {
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 8px;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  background: none;
+  font-family: "Marck Script", cursive;
+  height: 33px;
+}
+
+.button__container {
+  display: flex;
+  align-items: center;
+}
+
+.bought__button,
+.edit__button,
+.delete__button {
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  transition: transform 0.3s;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+}
+
+.add__button:hover,
+.save__button:hover,
+.bought__button:hover,
+.edit__button:hover,
+.delete__button:hover {
+  transform: scale(1.1);
+}
+
+.bought {
+  text-decoration-line: line-through;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 2px;
+}
